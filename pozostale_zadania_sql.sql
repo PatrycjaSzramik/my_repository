@@ -36,13 +36,13 @@ and KLIENT_ID in (select KLIENT_ID from ranking where rankk=3);
 --zad. 3. Zaproponuj zapytanie SQL, które zwróci dane do faktu f_docieralnosc pokazuj¹cego globaln¹ docieralnoœæ do klientów. Ma byæ on pogrupowany po dacie. Jego struktura wygl¹da nastêpuj¹co: 
 --data | sukcesy | utraty | do_ponowienia | zainteresowani_utraty | niezainteresowani_sukcesy
 --Fakt zawiera 1 wymiar:
---?	data (nie timestamp!)
+--data (nie timestamp!)
 --	oraz miary:
---?	sukcesy - liczba klientów, których ostatnim statusem jest “zainteresowany”
---?	utraty - liczba klientów, których ostatnim statusem jest “niezainteresowany”
---?	do_ponowienia - liczba klientów, których ostatni status to “poczta_g³osowa” lub “nie_ma_w_domu”
---?	(Bonus) zainteresowani_utraty - liczba klientów, których ostatnim statusem jest “niezainteresowany”, a poprzednio wyst¹pi³ status “zainteresowany”
---?	(Bonus) niezainteresowani_sukcesy - liczba klientów, których ostatnim statusem jest “zainteresowany”, a poprzednio wyst¹pi³ status “niezainteresowany”
+--sukcesy - liczba klientów, których ostatnim statusem jest “zainteresowany”
+--utraty - liczba klientów, których ostatnim statusem jest “niezainteresowany”
+--do_ponowienia - liczba klientów, których ostatni status to “poczta_g³osowa” lub “nie_ma_w_domu”
+--(Bonus) zainteresowani_utraty - liczba klientów, których ostatnim statusem jest “niezainteresowany”, a poprzednio wyst¹pi³ status “zainteresowany”
+--(Bonus) niezainteresowani_sukcesy - liczba klientów, których ostatnim statusem jest “zainteresowany”, a poprzednio wyst¹pi³ status “niezainteresowany”
 
 
 with
