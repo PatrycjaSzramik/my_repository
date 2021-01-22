@@ -1,0 +1,3 @@
+$fileDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+cd $fileDir
+java '-Dtalend.component.manager.m2.repository=%cd%/../lib' '-Xms256M' '-Xmx1024M' -cp '.;../lib/routines.jar;../lib/log4j-jcl-2.12.1.jar;../lib/log4j-slf4j-impl-2.12.1.jar;../lib/log4j-api-2.12.1.jar;../lib/log4j-core-2.12.1.jar;../lib/commons-collections-3.2.2.jar;../lib/commons-lang-2.6.jar;../lib/commons-logging-1.1.1.jar;../lib/jaxen-1.1.6.jar;../lib/xom-1.2.7.jar;../lib/commons-beanutils-1.8.3.jar;../lib/slf4j-api-1.7.25.jar;../lib/dom4j-2.1.1.jar;../lib/external_sort.jar;../lib/staxon-1.2.jar;../lib/ezmorph-1.0.6.jar;../lib/json-lib-2.4.5-talend.jar;../lib/talendcsv.jar;../lib/crypto-utils.jar;kontakty2_0_1.jar;' local_project.kontakty2_0_1.kontakty2  --context=Default $args
